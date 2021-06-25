@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <div id="test-selector" class="nav">
+        <div class="closebtn" onclick="closeNav()">X</div>
+        <div class="selector-content">
+            <h3 id="selector-test0" onclick="changeCard(0)">None</h3>
+            <h3 id="selector-test1" onclick="changeCard(1)">MDS TEST</h3>
+            <h3 id="selector-test2" onclick="changeCard(2)">AML TEST</h3>
+            <h3 id="selector-test3" onclick="changeCard(3)">Disease 3</h3>
+            <h3 id="selector-test4" onclick="changeCard(4)">Disease 4</h3>
+            <h3 id="selector-test5" onclick="changeCard(5)">Disease 5</h3>
+            <h3 id="selector-test6" onclick="changeCard(6)">Disease 6</h3>
+            <h3 id="selector-test7" onclick="changeCard(7)">Disease 7</h3>
+            <h3 id="selector-test8" onclick="changeCard(8)">Disease 8</h3>
+            <h3 id="selector-test9" onclick="changeCard(9)">Disease 9</h3>
+        </div>
+    </div>
+
+
+    <section class="profile-section">
+        <div class="profile-img"><img src="./assets/profilePic.svg" alt="Profile Picture"></div>
+        <div class="container">
+            <p class=welcome>WELCOME</p>
+            <div id="username" class="body-bold">Pinpinut</div>
+        </div>
+    </section>
+
+
+
+    <section class="cases-section">
+        <ul>
+            <li>
+                <!-- case1 card -->
+                <div id="0" class="cases-card">
+                    <div class="container">
+                        <p id="0-subtitle" class="subtitle">CHOOSE YOUR TEST</p>
+                        <h3 id="0-title" class="title">CASE 1</h3>
+                    </div>
+                    <img onclick="openNav(0)" src="./assets/chevron-right.svg" alt="Click to choose your test">
+                    <div class="edit-btn" onclick="openNav(0)">
+                        <div class="button">EDIT</div>
+                    </div>
+                </div>
+                <!-- case2 card -->
+                <div id="1" class="cases-card">
+                    <div class="container">
+                        <p id="1-subtitle" class="subtitle">CHOOSE YOUR TEST</p>
+                        <h3 id="1-title" class="title">CASE 2</h3>
+                    </div>
+                    <img onclick="openNav(1)" src="./assets/chevron-right.svg" alt="Click to choose your test">
+                    <div class="edit-btn" onclick="openNav(1)">
+                        <div class="button">EDIT</div>
+                    </div>
+                </div>
+                <!-- case3 card -->
+                <div id="2" class="cases-card">
+                    <div class="container">
+                        <p id="2-subtitle" class="subtitle">CHOOSE YOUR TEST</p>
+                        <h3 id="2-title" class="title">CASE 3</h3>
+                    </div>
+                    <img onclick="openNav(2)" src="./assets/chevron-right.svg" alt="Click to choose your test">
+                    <div class="edit-btn" onclick="openNav(2)">
+                        <div class="button">EDIT</div>
+                    </div>
+                </div>
+                <!-- case4 card -->
+                <div id="3" class="cases-card">
+                    <div class="container">
+                        <p id="3-subtitle" class="subtitle">CHOOSE YOUR TEST</p>
+                        <h3 id="3-title" class="title">CASE 4</h3>
+                    </div>
+                    <img onclick="openNav(3)" src="./assets/chevron-right.svg" alt="Click to choose your test">
+                    <div class="edit-btn" onclick="openNav(3)">
+                        <div class="button">EDIT</div>
+                    </div>
+                </div>
+                <!-- case5 card -->
+                <div id="4" class="cases-card">
+                    <div class="container">
+                        <p id="4-subtitle" class="subtitle">CHOOSE YOUR TEST</p>
+                        <h3 id="4-title" class="title">CASE 5</h3>
+                    </div>
+                    <img onclick="openNav(4)" src="./assets/chevron-right.svg" alt="Click to choose your test">
+                    <div class="edit-btn" onclick="openNav(4)">
+                        <div class="button">EDIT</div>
+                    </div>
+                </div>
+            
+            </li>
+        </ul>
+    </section>
+
+    <div class="start" onclick="start()">START</div>
+
+    <div id="testing">
+        <h2>Blood Testing</h2>
+        <div class="timer-container">
+            <h1 id="timer">00:00</h1> 
+        </div>
+        
+        <div class="container">
+            <div class="start-time">
+                <p class="time">Started Testing</p>
+                <div id="start" class="body-bold">00:00</div>
+            </div>
+            <div class="end-time">
+                <p class="time">Test Ending</p>
+                <div id="end" class="body-bold">00:00</div>
+            </div>
+        </div>       
+    </div>
+
+</body>
+
+</html>
