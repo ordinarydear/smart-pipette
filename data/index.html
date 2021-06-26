@@ -105,7 +105,6 @@
 
     <div class="page" id="testing">
         <h2>Blood Testing</h2>
-        <div id="testtest"></div>
 
         <div id="timer-container">
             <div id="progress-bar"></div>
@@ -124,7 +123,15 @@
         </div>       
     </div>
 
-    <div class="page" id="completed"></div>
+    <div class="page" id="completed">
+        <h2>Your Blood Tests</h2>
+        <h2>Has Completed </h2>
+        <div class="container">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_pijntf4p.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+        </div>
+        <div id="back-to-home" class="button" onclick="closeCompleted()">Back to home</div>
+    </div>
 
 </body>
 

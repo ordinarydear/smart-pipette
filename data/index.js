@@ -16,7 +16,7 @@ const DISEASE_5 = new BloodTest("Disease 5", 20)
 const DISEASE_6 = new BloodTest("Disease 6", 20)
 const DISEASE_7 = new BloodTest("Disease 7", 20)
 const DISEASE_8 = new BloodTest("Disease 8", 20)
-const DISEASE_9 = new BloodTest("Disease 9", 20)
+const DISEASE_9 = new BloodTest("Disease 9", 10)
 
 let case_1 = new BloodTest();
 let case_2 = new BloodTest();
@@ -101,11 +101,12 @@ function start() {
   document.getElementById("testing").style.width = "100%"
   timer(maxTime);
   bar(document.getElementById("progress-bar"), maxTime);
+  
 
 
 }
 
-function timer(testTime) {
+function timer(testTime, bar) {
 
   var endDate = new Date();
   var startDate = new Date();
@@ -138,10 +139,22 @@ function timer(testTime) {
 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("timer").innerHTML = "DONE";
+      document.getElementById("timer").innerHTML = "00:00:00";
+      openCompleted();
     }
   }, 1000);
 }
+
+function openCompleted(){
+  document.getElementById("completed").style.width = "100%"
+  document.getElementById("testing").style.width = "0%"
+}
+
+function closeCompleted(){
+  location.reload();
+
+}
+
 
 function bar(id, time) {
   var bar = new ProgressBar.Circle(id, {
@@ -153,7 +166,9 @@ function bar(id, time) {
     trailWidth: 10,
     svgStyle: null
   });
-  bar.animate(1.0);
+
+  bar.animate(1);
+
 }
 
 

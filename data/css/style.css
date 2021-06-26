@@ -67,6 +67,7 @@ p {
   line-height: 100%;
   letter-spacing: 1.25px;
   text-transform: uppercase;
+  color: #323f4b;
 }
 
 section {
@@ -282,7 +283,7 @@ ul {
   background-color: #1264d1;
 }
 
-#testing {
+.page {
   top: 0;
   bottom: 0;
   left: 0;
@@ -358,5 +359,31 @@ ul {
 #testing p.time {
   color: #7B8794;
   padding-bottom: 4px;
+}
+
+#completed {
+  width: 0%;
+}
+
+#completed .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 60%;
+  width: 100%;
+}
+
+#completed #back-to-home {
+  position: absolute;
+  bottom: 5em;
+}
+
+#completed #back-to-home:active, #completed #back-to-home:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

@@ -69,6 +69,7 @@ p {
     line-height: 100%;
     letter-spacing: 1.25px;
     text-transform: uppercase;
+    color: #323f4b;
 }
 
 section {
@@ -244,7 +245,9 @@ ul {
     }
 }
 
-#testing {
+
+.page{
+
     top: 0;
     bottom: 0;
     left: 0;
@@ -261,6 +264,9 @@ ul {
     justify-content: center;
     align-items: center;
 
+}
+
+#testing {
 
     .container{
         width: 100%;
@@ -300,4 +306,28 @@ ul {
         color: #7B8794;
         padding-bottom: 4px;
     }
+}
+
+#completed{
+    width: 0%;
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 60%;
+        width: 100%;
+    }
+
+    #back-to-home{
+        position: absolute;
+        bottom: 5em;
+
+        &:active, &:hover{
+            text-decoration: underline;
+        }
+
+
+    }
+
 }
