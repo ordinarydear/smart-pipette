@@ -329,7 +329,8 @@ ul {
   color: #323f4b;
 }
 
-#testing .timer-container {
+#testing #timer-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,6 +341,14 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   height: 50%;
+  width: 100%;
+}
+
+#testing #progress-bar {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: 1001;
 }
 
 #testing .start-time, #testing .end-time {

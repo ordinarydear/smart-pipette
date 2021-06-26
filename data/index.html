@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./index.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./node_modules/progressbar.js/dist/progressbar.min.js"></script>
+    
 </head>
 
 <body>
@@ -101,9 +103,12 @@
 
     <div class="start" onclick="start()">START</div>
 
-    <div id="testing">
+    <div class="page" id="testing">
         <h2>Blood Testing</h2>
-        <div class="timer-container">
+        <div id="testtest"></div>
+
+        <div id="timer-container">
+            <div id="progress-bar"></div>
             <h1 id="timer">00:00</h1> 
         </div>
         
@@ -118,6 +123,8 @@
             </div>
         </div>       
     </div>
+
+    <div class="page" id="completed"></div>
 
 </body>
 
