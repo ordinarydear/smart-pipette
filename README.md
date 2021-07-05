@@ -20,4 +20,4 @@ This project is a part of the pipetting robot project designed to receive user i
 ```
 http://smart-pipette.local
 ```
-**For a better UI, Phone is recommended
+**For a better UI, phone is recommended
