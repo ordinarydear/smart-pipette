@@ -70,7 +70,7 @@ let objJson;
 
 async function send(obj) {
   try {
-    const response = await fetch("http://smart-pipette.local/led", {
+    const response = await fetch("http://smart-pipette.local/start", {
       method: "PUT",
       body: JSON.stringify(obj),
       headers: {

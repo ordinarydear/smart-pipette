@@ -42,25 +42,15 @@ void setup()
 
   MDNS.begin("smart-pipette");
 
-  pinMode(LED_BUILTIN, OUTPUT);
-
   DefaultHeaders::Instance().addHeader("Access-Control-Allow-Origin", "*");
   DefaultHeaders::Instance().addHeader("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
   DefaultHeaders::Instance().addHeader("Access-Control-Allow-Headers", "*");
   DefaultHeaders::Instance().addHeader("Referrer-Policy", "no-referrer");
-  
-  // AsyncCallbackJsonWebHandler* handler = new AsyncCallbackJsonWebHandler("/test", [](AsyncWebServerRequest *request, JsonVariant &json) {
-  // const JsonObject& jsonObj = json.as<JsonObject>();
-  // Serial.println(jsonObj);
-  // Serial.println("wow");
-  // });
-
-  // server.addHandler(handler);
 
 
-  server.addHandler(new AsyncCallbackJsonWebHandler("/led", [](AsyncWebServerRequest*request, JsonVariant &json) {
+  server.addHandler(new AsyncCallbackJsonWebHandler("/start", [](AsyncWebServerRequest*request, JsonVariant &json) {
     const JsonObject &jsonObj = json.as<JsonObject>();
-    //serializeJson(jsonObj, Serial);
+
     const int time = jsonObj["time"];
     const String case_1 = jsonObj["case_1"];
     const String case_2 = jsonObj["case_2"];
