@@ -16,7 +16,8 @@ Upload filesystem image
 Next compile and run the sketch.
 
 Once the sketch is running you should be able to use a browser to open the device's UI.
-**For better UI, Phone is recommended
+
+**For a better UI, Phone is recommended
 
 ```
 http://smart-pipette.local
