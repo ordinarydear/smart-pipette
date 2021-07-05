@@ -1,6 +1,6 @@
 # smart-pipette
 
-This project is a part of the pipetting robot project designed to receive user inputs. ESP32 is used as a web server where the contents is stored  from the SPIFFS filesystem. The UI is built from HTML, CSS, and JavaScript. 
+This project is a part of the pipetting robot project designed to receive user inputs. ESP32 is used as a web server where the contents are stored  from the SPIFFS filesystem. The UI is built from HTML, CSS, and JavaScript. 
 
 
 # Setup
