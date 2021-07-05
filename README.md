@@ -11,11 +11,10 @@ This project is a part of the pipetting robot project designed to receive user i
 #define SSID "YOUR_SSID"
 #define PASSWORD "YOUR_PASSWORD"
 ```
-2) Upload filesystem image
 
-3) Next compile and run the sketch.
+2) Next compile and run the sketch.
 
-4) Once the sketch is running you should be able to use a browser to open the device's UI.
+3) Once the sketch is running you should be able to use a browser to open the device's UI.
 
 ```
 http://smart-pipette.local
